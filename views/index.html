@@ -1,0 +1,80 @@
+<extends src='layout.html'>
+  <block name='content'>
+    <section id="slider" class="slider-element slider-parallax full-screen force-full-screen">
+
+      <div class="slider-parallax-inner">
+
+        <div class="full-screen force-full-screen section nopadding nomargin noborder ohidden">
+
+          <div class="container center">
+            <div class="vertical-middle ignore-header">
+              <div class="emphasis-title">
+                <h1>
+                  <span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn" data-speed="6000">
+                    <span class="t-rotate t700 font-body opm-large-word">canvas.|different.|creative.|digital.|vision.</span>
+                  </span>
+                </h1>
+              </div>
+              <a href="#" class="button button-border button-circle" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">View our Works</a>
+            </div>
+          </div>
+
+          <div class="video-wrap">
+            <video poster="images/videos/3.jpg" preload="auto" loop autoplay muted>
+              <source src='images/videos/3.webm' type='video/webm' />
+              <source src='https://storage.googleapis.com/coverr-main/mp4/Coverr-Highrise.mp4' type='video/mp4' />
+            </video>
+            <div class="video-overlay" style="background: rgba(255,255,255,0.80);"></div>
+          </div>
+
+          <a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+
+        </div>
+
+      </div>
+
+    </section><!-- #slider end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+    <div class="content-wrap nopadding">
+
+				<div id="section-about" class="center page-section">
+
+					<div class="container clearfix">
+
+						<h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px;">A digital web studio creating stunning &amp; engaging online experiences</h2>
+
+						<p class="lead divcenter bottommargin" style="max-width: 800px;">Ford Foundation reduce child mortality fight against oppression refugee disruption pursue these aspirations effect. Free-speech Nelson Mandela change liberal; challenges of our times sustainability institutions.</p>
+
+						<p class="bottommargin" style="font-size: 16px;"><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="more-link">Learn more <i class="icon-angle-right"></i></a></p>
+
+						<div class="clear"></div>
+
+						<div class="row topmargin-lg divcenter" style="max-width: 1000px;">
+                <each loop='testimonial of dato.testimonial'>
+                <div class="col-md-6 bottommargin">
+                  <div class="team">
+                    <div class="team-image">
+                      <div class="video-responsive">
+                        <iframe src="https://player.vimeo.com/video/{{ testimonial.video.providerUid }}?title=0&byline=0&portrait=0" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <div class="team-desc team-desc-bg">
+                      <div class="team-title"><h4>{{ testimonial.name }}</h4><span>{{ testimonial.title }}<strong> | </strong>{{ testimonial.company }}</span></div>
+                    </div>
+                  </div>
+                </div>
+                </each>
+
+						</div>
+
+					</div>
+
+        </div>
+      </div>
+    </section>
+  </block>
+</extends>

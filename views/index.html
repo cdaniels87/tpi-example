@@ -3,16 +3,16 @@
 
       <section id="slider" class="slider-element clearfix">
 
-          <div class="section swiper_wrapper light parallax nopadding nomargin noborder ohidden" style="background-image: url('../images/parallax/home/6.jpg');" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
+          <div class="section swiper_wrapper dark parallax nopadding nomargin noborder ohidden" style="background-image: url('../images/parallax/home/6.jpg');" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
     
             <div class="container center">
               <div class="vertical-middle">
     
                 <div class="emphasis-title">
-                  <h1 class="t600 ls4 uppercase bottommargin-sm" style="font-size: 48px;">The Pacific Institute&reg;</h1>
-                  <p class="lead">Accelerating performance in real estate organizations since 1971.</p>
+                  <h1 class="t600 ls4 uppercase bottommargin-sm" style="font-size: 48px;">{{ dato.header[0].title }}</h1>
+                  <p class="lead">{{ dato.header[0].subtitle }}</p>
                 </div>
-                <a href="#" class="button button-border button-light button-circle" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Get in Touch</a>
+                <a href="#" class="button button-border button-dark button-circle" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">{{ dato.header[0].cta }}</a>
     
               </div>
             </div>

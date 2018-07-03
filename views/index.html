@@ -1,39 +1,34 @@
 <extends src='layout.html'>
   <block name='content'>
-    <section id="slider" class="slider-element slider-parallax full-screen force-full-screen">
 
-      <div class="slider-parallax-inner">
+      <section id="slider" class="slider-element clearfix">
 
-        <div class="full-screen force-full-screen section nopadding nomargin noborder ohidden">
-
-          <div class="container center">
-            <div class="vertical-middle ignore-header">
-              <div class="emphasis-title">
-                <h1>
-                  <span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn" data-speed="6000">
-                    <span class="t-rotate t700 font-body opm-large-word">The Pacific Institute</span>
-                  </span>
-                </h1>
+          <div class="section swiper_wrapper light parallax nopadding nomargin noborder ohidden" style="background-image: url('../images/parallax/home/6.jpg');" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
+    
+            <div class="container center">
+              <div class="vertical-middle">
+    
+                <div class="emphasis-title">
+                  <h1 class="t600 ls4 uppercase bottommargin-sm" style="font-size: 48px;">The Pacific Institute&reg;</h1>
+                  <p class="lead">Accelerating performance in real estate organizations since 1971.</p>
+                </div>
+                <a href="#" class="button button-border button-light button-circle" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Get in Touch</a>
+    
               </div>
-              <a href="#" class="button button-border button-circle" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">View our Works</a>
             </div>
+    
+            <div class="video-wrap">
+                <video poster="images/videos/3.jpg" preload="auto" loop autoplay muted>
+                  <source src='images/videos/3.webm' type='video/webm' />
+                  <source src='https://storage.googleapis.com/coverr-main/mp4/Coverr-Highrise.mp4' type='video/mp4' />
+                </video>
+                <div class="video-overlay" style="background: rgba(255,255,255,0.80);"></div>
+              </div>
+    
           </div>
+    
+        </section><!-- #slider end -->
 
-          <div class="video-wrap">
-            <video poster="images/videos/3.jpg" preload="auto" loop autoplay muted>
-              <source src='images/videos/3.webm' type='video/webm' />
-              <source src='https://storage.googleapis.com/coverr-main/mp4/Coverr-Highrise.mp4' type='video/mp4' />
-            </video>
-            <div class="video-overlay" style="background: rgba(255,255,255,0.80);"></div>
-          </div>
-
-          <a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
-
-        </div>
-
-      </div>
-
-    </section><!-- #slider end -->
 
 		<!-- Content
 		============================================= -->
